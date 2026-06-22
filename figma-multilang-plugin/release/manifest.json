@@ -1,0 +1,13 @@
+{
+  "name": "多语言文本替换",
+  "id": "1650116173380235044",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html",
+  "editorType": ["figma"],
+  "permissions": [],
+  "documentAccess": "dynamic-page",
+  "networkAccess": {
+      "allowedDomains": ["none"]
+    }
+}

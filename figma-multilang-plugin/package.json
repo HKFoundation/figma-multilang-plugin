@@ -1,0 +1,16 @@
+{
+  "name": "figma-multilang-plugin",
+  "version": "1.0.0",
+  "description": "Figma Multi-Language Text Replace Plugin",
+  "scripts": {
+    "build": "tsc --allowJs --checkJs --noEmit --lib es2019 code.js",
+    "watch": "tsc --allowJs --checkJs --noEmit --lib es2019 code.js --watch"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.97.0",
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}

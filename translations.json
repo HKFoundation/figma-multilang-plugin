@@ -1,0 +1,20 @@
+{
+  "zh": {
+    "Photographing Others:": "拍摄:",
+    "Lock Target": "锁定目标",
+    "Unlock Target": "打开目标",
+    "Tap the person's frame to lock, and tap the close button to unlock.": "轻按人的框架锁定，轻按关闭按钮解锁。"
+  },
+  "jp": {
+    "Photographing Others:": "他人を撮影する：",
+    "Lock Target": "タターゲットをロック",
+    "Unlock Target": "タターゲットを解解錠",
+    "Tap the person's frame to lock, and tap the close button to unlock.": "人物のフレームをタップしてロックし、閉じるボタンをタップしてアンロックします。"
+  },
+  "es": {
+    "Photographing Others:": "Fotografia otros:",
+    "Lock Target": "Bloqueo del objetivo",
+    "Unlock Target": "Objetivo de liberación",
+    "Tap the person's frame to lock, and tap the close button to unlock.": "Toca el marco de la persona para cerrarlo y toca el botón cerrar para desbloquearlo."
+  }
+}

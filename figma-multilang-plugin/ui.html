@@ -182,6 +182,18 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
   },
   "jp": {
     "Hello": "こんにちは"
+  },
+  "es": {
+    "Hello": "Hola"
+  },
+  "de": {
+    "Hello": "Hallo"
+  },
+  "fr": {
+    "Hello": "Bonjour"
+  },
+  "it": {
+    "Hello": "Ciao"
   }
 }'></textarea>
       <div class="buttons">
@@ -248,7 +260,10 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
           const languageColumns = {
             zh: findColumnIndex(headers, ['zh', 'cn', '中文'], 2),
             jp: findColumnIndex(headers, ['jp', 'ja', '日文', '日本語'], 3),
-            es: findColumnIndex(headers, ['es', 'es-es', 'spanish', '西班牙语'], 4)
+            es: findColumnIndex(headers, ['es', 'es-es', 'spanish', '西班牙语'], 4),
+            de: findColumnIndex(headers, ['de', 'de-de', 'german', '德文', '德语'], 5),
+            fr: findColumnIndex(headers, ['fr', 'fr-fr', 'french', '法文', '法语'], 6),
+            it: findColumnIndex(headers, ['it', 'it-it', 'italian', '意文', '意大利语'], 7)
           };
 
           if (keyCol === -1) {
@@ -259,7 +274,10 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
           const translations = {
             zh: {},
             jp: {},
-            es: {}
+            es: {},
+            de: {},
+            fr: {},
+            it: {}
           };
           
           let keyCount = 0;
@@ -286,7 +304,7 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
           }
           
           translationsEl.value = JSON.stringify(translations, null, 2);
-          addStatus(`已导入 ${keyCount} 条翻译（zh, jp, es）`);
+          addStatus(`已导入 ${keyCount} 条翻译（zh, jp, es, de, fr, it）`);
           
         } catch (error) {
           addStatus('解析 Excel 失败: ' + error.message);
@@ -345,6 +363,9 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
             break;
           case 'complete':
             addStatus('✓ ' + msg.message);
+            break;
+          case 'error':
+            addStatus('✗ ' + msg.message);
             break;
         }
       }
